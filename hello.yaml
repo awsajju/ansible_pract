@@ -1,6 +1,5 @@
-- name: printing hello worrld
+- name: printing hello world
   hosts: web
-  become: yes
   tasks: 
   - name: Hellow world
     ansible.builtin.debug:
