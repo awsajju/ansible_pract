@@ -1,0 +1,12 @@
+- name: through prompt variables
+  hosts: local
+  connection: local
+  vars_prompt:
+    - name: course
+      prompt: please enter the course name
+    - name: trainer
+      prompt: pleasxe enter you trainer
+  tasks:
+  - name: print the varaibales through prompt
+    ansible.builtin.debug:
+      msg: "I'm learning {{ course }} and my trainer in {{ trainer }}"
