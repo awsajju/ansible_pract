@@ -1,5 +1,5 @@
 - name: printing hello worrld
-  hosts: all 
+  hosts: web
   become: yes
   tasks: 
   - name: Hellow world
