@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    course: learning devops
+    course: "learning devops"
   tasks:
   - name: varibales
     ansible.builtin.debug:
