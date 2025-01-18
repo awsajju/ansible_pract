@@ -1,0 +1,12 @@
+- name: varaibale in files
+  hosts: local
+  connection: local
+  vars_files:
+    - file.yaml
+  tasks:
+  - name: varaibales from files
+    ansible.builtin.debug:
+      msg: "i'm learning {{ course }}"
+
+  
+  
