@@ -6,4 +6,4 @@
   tasks:
   - name: varibales
     ansible.builtin.debug:
-     msg: "I'm learning {{ Course }}"
+     msg: "I'm learning {{ course }}"
