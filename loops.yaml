@@ -3,9 +3,9 @@
   connection: local
   tasks:
   - name: installing packages
-    ansible.builtin.debug:
+    ansible.builtin.package:
       msg: "installing packages {{ items }}"
-    loops:
-      - git
-      - mysql
-      - tree
+  loops:
+    - git
+    - mysql
+    - tree
