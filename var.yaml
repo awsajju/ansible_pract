@@ -1,0 +1,9 @@
+- name: varaible
+  hosts: local
+  connection: local
+  tasks:
+  vars:
+    course: learning devops
+  - name: varibales
+    ansible.builtin.debug:
+     msg: "I'm learning {{ Course }}"
