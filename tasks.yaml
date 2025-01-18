@@ -9,3 +9,7 @@
       course: "learning ansible"
     ansible.builtin.debug:
       msg: "i'm learning {{ course }}"
+    
+  - name: task varaibale 1
+    ansible.builtin.debug:
+      msg: "i'm learning {{ course }}"
