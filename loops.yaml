@@ -1,11 +1,12 @@
-- name: inbstalling packages using loops
+- name: installing packages using loops
   hosts: local
   connection: local
   tasks:
   - name: installing packages
     ansible.builtin.package:
-      msg: "installing packages {{ items }}"
-  loops:
+     name: "{{ item }}"
+     state: present
+  loop:
     - git
     - mysql
     - tree
