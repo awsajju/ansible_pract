@@ -1,0 +1,11 @@
+- name: inbstalling packages using loops
+  hosts: local
+  connection: local
+  tasks:
+  - name: installing packages
+    ansible.builtin.debug:
+      msg: "installing packages {{ items }}"
+    loops:
+      - git
+      - mysql
+      - tree
