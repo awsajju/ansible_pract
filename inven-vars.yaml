@@ -5,3 +5,4 @@
   - name: inventory varaibles
     ansible.builtin.debug:
       msg: "I'm learning {{ course }} and my trainer is {{ trainer }}"
+      
