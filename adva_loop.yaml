@@ -1,0 +1,13 @@
+- name: advance in loops
+  hosts: local
+  connection: local
+  become: yes
+  tasks: 
+  - name: installing packages
+    ansible.builtin.packages:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+      - { name: 'git', state: 'present' }
+      - { name: 'tree', state: 'absent' }
+      - { name: 'mysql', state: 'present' }
